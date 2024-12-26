@@ -1,0 +1,203 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* css nav style*/
+
+ul{
+    list-style: none;
+   background-color: white;
+
+}
+ul li{
+    display: inline-block;
+    position: relative;
+    
+}
+ul li a{
+    display: block;
+    padding: 25px 27px;
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+}
+ul li ul.dropdown li{
+   display: block;
+   border-bottom:1px solid rgba(243, 230, 230, 0.945);
+}
+ul li ul.dropdown{
+    width: 150%;
+    background:whitesmoke;
+    position: absolute;
+    z-index: 999;
+    display: none;  
+}
+
+ul .dropdown li a{
+    padding:10px 10px;
+}
+ul li a:hover{
+   color:orange;
+   background-color: rgba(255, 255, 255, 0.253);
+
+}
+ul li:hover ul.dropdown{
+    display: block;
+}
+.nav-container{
+    display: flex;
+    width: 100%;
+    font-family:neucha,sans-serif;
+    position: relative;
+}
+.nav-container img{
+    height: 80px;
+    width: 80px;
+    margin-left:50px;
+    display:inline-block;
+}
+/* content box style*/
+.content{
+    background-image: url(images/cloudmountain.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 80vh;
+}
+.content h1{
+    font-family: "neucha",sans-serif;
+    text-transform: uppercase;
+    font-size: 40px;
+    position: relative;
+    bottom:25%;
+    animation-duration: 1s;
+
+}
+.content p{
+    position: relative;
+    font-family: "poppins",sans-serif;
+    color:black;
+    width: 64%;
+    position: relative;
+    bottom:20%;
+    animation-duration: 1s;
+    
+}
+
+/*  grid card style */
+.container{
+    padding: 15px 9%;
+    padding-bottom:100px;
+}
+.container .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    row-gap: 15px;
+    min-width: 100%;
+}
+.container .box-container .card{
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    background: #fff;
+    padding: 20px;
+}
+.container .box-container .card img{
+    height: 200px;
+    margin-top: 10%;
+}
+.container .box-container .card .pic-1{
+  margin-top: 15%;
+}
+
+.container .box-container .card .pic-2{
+    margin-top: 15%;
+  }
+
+.container .box-container .card h1{
+    color:rgba(0,0,0,0.7);
+    text-transform: uppercase;
+    font-size: 25px;
+    font-family: "neucha",sans-serif;
+    letter-spacing: 1px;
+    line-height: 70px;
+}
+.container .box-container .card p{
+    font-size: 15px;
+    color: rgba(0,0,0,0.7);
+    font-family: "poppins",sans-serif;
+}
+.card .milk{
+     position:relative;
+     height: 200px;
+     left:20%;
+     bottom:40%;
+
+     
+    
+}
+.container .box-container .card .para-1{
+    color:rgb(248, 176, 42);
+    font-size: 45px;
+    font-family: "neucha",sans-serif;
+    font-weight: 700;
+    width: 70%;
+    position: relative;
+    left:20%;
+    top:20%;
+    z-index: 2;
+}
+
+/* footer section style*/
+.footer{
+    width: 123%;
+    height: 100px;
+    background-color:#252525;
+    border-top-color: rgba(255, 255, 255,0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+    margin-top: 3%;
+    right: 11%;
+}
+.footer-content {
+  background-color:#252525;
+  color:white;
+  font-family: "poppins",sans-serif;
+  font-size: 14px;
+  position: absolute;
+  top:30px;
+  left:2%;
+}
+.footer-content p{
+    color:white;
+    display: inline;
+    opacity: 0.7;
+}
+.footer-content a{
+  text-decoration: none;
+  color: blue;
+}
+
+.footer .social{
+    float: right;
+    margin-top: 20px;
+    background-color:#252525;
+}
+.footer .social i{
+   color: #626262;
+   font-size: 17px;
+   position: relative;
+   bottom:10px;
+   
+}
+.footer .social i:hover{
+    cursor: pointer;
+    color: white;
+}
